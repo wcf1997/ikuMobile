@@ -1,0 +1,353 @@
+body {
+  background-color: #efefef;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.header>div {
+  flex-shrink: 1;
+}
+
+.header>div.h_right span.envelope {
+
+  font-size: 2rem;
+  color: #999;
+}
+
+/* 搜索区域 */
+.search-area {
+  line-height: 50px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* padding: 0 5vw; */
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+
+}
+
+.search-area>.search::placeholder {
+  color: rgb(175, 175, 175);
+}
+
+.search-area>.search {
+  width: 100%;
+  background-color: #efefef;
+  height: 30px;
+
+  border-radius: 50px;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+}
+
+.search-area>.search-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0.3rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.5;
+}
+
+/* 分类样式开始 */
+.classify {
+  width: 100vw;
+  height: 11vw;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+  padding-right: 30px;
+  box-sizing: border-box;
+  /* overflow-y: hidden; */
+}
+
+.classify .h-classify {
+  line-height: 44px;
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.classify .h-classify>a {
+  padding: 0 5px;
+  font-size: 0.9rem;
+}
+
+.classify a.active {
+  color: #fb7299;
+}
+
+.classify .menu {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+}
+
+.classify .menu img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.classify .v-classify {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  padding: 0 10px;
+
+  z-index: 11;
+  height: 0;
+  transition: all 0.5s ease;
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.classify .v-classify.expand {
+  height: 8rem;
+  overflow: auto;
+
+}
+
+.classify .v-classify a {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.classify .v-classify a.active {
+  color: #fb7299;
+}
+
+.classify .v-classify .up {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  transform-origin: center center;
+  transform: rotate(180deg);
+  margin: auto;
+
+}
+
+.wrapper {
+  width: 100vw;
+  height: calc(100vh - 33.93vw);
+  overflow: hidden;
+}
+
+/* 轮播图 */
+/* 广告轮播区域 */
+.adv-banner {
+  width: 100vw;
+  height: 12rem;
+}
+
+.adv-banner {
+  padding: 0;
+  width: 100vw;
+  position: relative;
+  background-color: #fff;
+}
+
+.adv-banner .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.adv-banner .banner {
+  width: 1000%;
+
+  height: 100%;
+  transform: translateX(-10%);
+}
+
+.adv-banner .banner>li {
+  width: 100vw;
+  height: 100%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.adv-banner .banner>li>img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.adv-banner .banner>li .banner-info {
+  height: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.5), transparent);
+  line-height: 2.5rem;
+  color: #fff;
+  padding-left: 1rem;
+
+}
+
+.adv-banner .dot {
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+
+}
+
+.adv-banner .dot>li {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.adv-banner .dot>li.active {
+  background-color: #fff;
+}
+
+/* 视频展示样式 */
+.rec-video {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 5px;
+
+}
+
+.rec-video .video-box {
+
+  width: 46%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow:  0 0 1px 1px #ccc;
+}
+
+.rec-video .video-box .video {
+  position: relative;
+  width: 100%;
+  height: 6.5rem;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.rec-video .video-box .video-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.rec-video .video-box .video .count {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  height: 1.5rem;
+  padding: 0 5px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+
+}
+
+.rec-video .video-box .video .count>span {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+
+}
+
+.rec-video .video-box .video .count>span:first-child {
+  float: left;
+}
+
+.rec-video .video-box .video .count>span:last-child {
+  float: right;
+
+}
+
+.rec-video .video-box .video .count span.iconfont {
+  font-size: 1rem;
+}
+
+.rec-video .video-box .video .count span.iconfont i {
+  margin-left: 6px;
+  font-size: 0.6rem;
+  vertical-align: 1px;
+
+}
+
+.rec-video .video-box .video-info {
+  background-color: #fff;
+  padding: 5px 10px;
+  /* min-height: 5.7rem; */
+
+  overflow: hidden;
+
+}
+
+.rec-video .video-box .video-info .title {
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  height: 2.4rem;
+  overflow: hidden;
+}
+
+.rec-video .video-box .video-info .other-info {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+
+.rec-video .video-box .video-info .other-info .left {
+  background-color: rgb(255, 145, 1);
+  font-size: 9px;
+  padding: 3px 2px;
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 3px;
+}
+.rec-video .video-box .video-info .other-info .left.source {
+  color: #999;
+  background-color: transparent;
+  
+}
+
+.rec-video .video-box .video-info .other-info .right {
+  color: #999;
+}

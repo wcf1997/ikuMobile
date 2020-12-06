@@ -1,0 +1,272 @@
+
+.hide {
+  display: none !important;
+}
+.f-lex {
+  display: flex;
+}
+.bg-white {
+  background-color: #fff;
+}
+.bg-yellow {
+  background-color: #fbc216;
+}
+.bg-violet {
+  background-color: #a05bf6;
+}
+.bg-green {
+  background-color: #38c566;
+}
+.bg-blue {
+  background-color: #21c3f8;
+}
+.bg-black {
+  background-color: #222426;
+}
+.bg-gray {
+  background-color: #464545;
+}
+.bg-red {
+  background-color: #f73171;
+}
+.bg-brown {
+  background-color: #454343;
+}
+.bg-main {
+  background-color: #343232;
+}
+.f26 {
+  font-size: 4.5vw;
+}
+.f23 {
+  font-size: 4vw;
+}
+.footer {
+  width: 100vw;
+  height: 14.7vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.footer a {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.footer a img {
+  width: 4.3vw;
+  height: 4.3vw;
+}
+.footer a p {
+  font-size: 2.7vw;
+  margin-top: 1.6vw;
+}
+.cinema-content {
+  width: 100%;
+  background-color: #fff;/*背景颜色*/
+  padding-bottom: 21.3vw;
+}
+.cinema-header {
+  width: calc(100% - 5.3vw);
+  height: 11.3vw;
+  margin: auto;
+}
+.cinema-header .address p {
+  letter-spacing: 0.3vw;
+}
+.cinema-header .address img {
+  width: 2.4vw;
+  height: 1.5vw;
+  margin-left: 0.7vw;
+}
+.cinema-header .search-btn {
+  width: 4.5vw;
+  height: 4.8vw;
+}
+.cinema-nav {
+  width: 100%;
+  height: 8vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+ 
+}
+.cinema-nav a {
+  color: #999;/*区域、品牌*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body {
+  background-color: #efefef;
+}
+
+.cinema-nav a i {
+font-size: 1vw;
+  margin-left: 1.6vw;
+  vertical-align: 0;
+}
+.ad-content {
+  width: calc(100% - 5.3vw);
+  height: 24vw;
+  margin: auto;
+  margin-top: 2.7vw;
+}
+.ad-content img {
+  width: 100%;
+  height: 100%;
+}
+.list {
+  margin-top: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.list-item {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color:#fff;
+  padding-bottom: 10px;
+  box-shadow: 0 0 1px 1px #efefef;
+  
+  /*卡片背景*/
+  border-radius: 1vw;
+}
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10.7vw;
+  padding: 0 2.7vw;
+  border-bottom: 1px solid #ccc;
+
+  
+}
+.item-header-fire {
+  display: flex;
+  align-items: center;
+}
+.item-header-fire img {
+  width: 2.7vw;
+  height: 3.5vw;
+}
+.item-main {
+  padding: 0 2.7vw;
+}
+.cinema-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.rank {
+  display: flex;
+  align-items: center;
+  color: deeppink;
+  font-size: 3.5vw;
+}
+.rank img {
+  width: 2.7vw;
+  height: 2.9vw;
+  margin-right: 2.5vw;
+}
+.item-main .cinema-address {
+  color: #505050;
+  font-size: 4vw;
+  margin: 10px 0;
+}
+.label-icon {
+  margin: 10px 0;
+  color: rgb(129, 129, 129);
+}
+
+.label-icon>p.right {
+  color: #505050;
+}
+.cinema-label {
+  display: flex;
+  width: 60%;
+}
+.cinema-label p {
+  font-size: 2.7vw;
+  color: #fff;
+  margin-left: 1.6vw;
+  padding: 0 0.7vw;
+  border-radius: 0.7vw;
+}
+.cinema-label p:first-child {
+  margin-left: 0;
+}
+
+.discount {
+  display: flex;
+  margin: 10px 0;
+}
+.discount div {
+  display: flex;
+  margin-left: 1.1vw;
+}
+.discount>div>p:first-child{
+  color: #fff;
+}
+.discount div p {
+  font-size: 3.2vw;
+  color: #999;
+  padding: 0 0.7vw;
+}
+.discount div p:last-child {
+  margin-left: 0.7vw;
+}
+.discount div:first-child {
+  margin-left: 0;
+}
+.price {
+  display: flex;
+  align-items: center;
+  color: #f73171;
+
+}
+.price img {
+  width: 4vw;
+  height: 4vw;
+}
+
+/* 轮播图 */
+.vip-banner {
+  padding: 0;
+  width: 100vw;
+  position: relative;
+  background-color: #fff;
+}
+.vip-banner .swiper {
+  width: 100%;
+  height: 100%;
+}
+.vip-banner .banner {
+  width: 1000%;
+  height: 125px;
+  transform: translateX(-10%);
+}
+.vip-banner .banner>li {
+  width: 100vw;
+  height: 100%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  
+
+
+}
+.vip-banner .banner>li>img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* .wrapper */
+.wrapper {
+  height: calc(100vh - 22vw);
+  width: 100vw;overflow: hidden;
+}

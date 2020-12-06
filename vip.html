@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>会员中心</title>
+<link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/vip.css">
+<style>
+  .h_right span i:first-child {
+    
+    margin-right: 5px;
+  }
+  .h_right span i:last-child {
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+</style>
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="h_left">
+        <a href="#">
+          <img src="./images/avatar02.jpg" class="avatar" alt="">
+
+        </a>
+      </div>
+      <div class="h_center">会员中心</div>
+      <div class="h_right">
+        <span class="iconfont">
+          <span class="shopCount hide">0</span>
+          <i class="cart">&#xe603; </i>
+          
+        </span>
+      </div>
+    </header>
+    <div class="hint hide">添加成功</div>
+    <section class="store store2 hide">
+      <ul class="clearfix choose ">
+        <li class="active">推荐</li>
+        <li>魔力赏</li>
+        <li>美图</li>
+        <li>情报</li>
+      </ul>
+    </section>
+    <div class="wrapper">
+      <div class="content clearfix">
+        <div class="main">
+          <div class="search-area">
+            <input type="text" class="search" placeholder="查找精彩动态内容">
+            <img src="./images/search.png" alt="" class="search-btn">
+          </div>
+          <section class="classify">
+            <div><div class="imgBox">
+              <img src="./images/vip-c-01.png" alt="">
+            </div><span>手办</span></div>
+            <div><div class="imgBox">
+              <img src="./images/vip-c-02.png" alt="">
+            </div><span>周边</span></div>
+            <div><div class="imgBox">
+              <img src="./images/vip-c-03.png" alt="">
+            </div><span>漫展演出</span></div>
+            <div><div class="imgBox">
+              <img src="./images/vip-c-04.png" alt="">
+            </div><span>魔力赏</span></div>
+            <div><div class="imgBox">
+              <img src="./images/vip-c-05.png" alt="">
+            </div><span>游戏相关</span></div>
+            <div><div class="imgBox">
+              <img src="./images/vip-c-06.png" alt="">
+            </div><span>潮玩扭蛋</span></div>
+            <div><div class="imgBox">
+              <img src="./images/vip-c-07.png" alt="">
+            </div><span>图书漫画</span></div>
+            <div><div class="imgBox">
+              <img src="./images/vip-c-08.png" alt="">
+            </div><span>全部分类</span></div>
+
+          </section>
+          <section class="rec">
+            <div class="content clearfix">
+              <div class="left">
+                <span class="title">今日上新</span>
+                <span class="desc">也可能不上新</span>
+              </div>
+              <div class="right iconfont">
+                <svg t="1606702245127" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="15541" width="200" height="200">
+                  <path
+                    d="M843.824762 597.089524v156.038095a55.832381 55.832381 0 0 1-55.832381 56.076191H230.64381a56.07619 56.07619 0 0 1-56.076191-56.076191V214.79619h669.257143v245.76"
+                    fill="#D6F3FC" p-id="15542"></path>
+                  <path
+                    d="M787.992381 828.952381H230.64381a75.580952 75.580952 0 0 1-75.580953-75.580952V214.79619a19.504762 19.504762 0 0 1 19.504762-19.504761h669.257143a19.504762 19.504762 0 0 1 19.748571 19.504761v245.76a19.748571 19.748571 0 1 1-39.253333 0V234.300952H195.047619v518.826667a36.571429 36.571429 0 0 0 36.327619 36.571429h556.617143a36.571429 36.571429 0 0 0 36.327619-36.571429v-156.038095a19.748571 19.748571 0 0 1 39.253333 0v156.038095a75.580952 75.580952 0 0 1-75.580952 75.824762z"
+                    fill="#54B6DD" p-id="15543"></path>
+                  <path
+                    d="M139.946667 214.79619m48.274285 0l647.558096 0q48.274286 0 48.274285 48.274286l0 210.16381q0 48.274286-48.274285 48.274285l-647.558096 0q-48.274286 0-48.274285-48.274285l0-210.16381q0-48.274286 48.274285-48.274286Z"
+                    fill="#D6F3FC" p-id="15544"></path>
+                  <path
+                    d="M832.365714 541.257143H191.634286a71.43619 71.43619 0 0 1-71.192381-71.436191v-203.337142A71.192381 71.192381 0 0 1 191.634286 195.047619h640.731428a71.192381 71.192381 0 0 1 71.192381 71.192381v203.337143a71.43619 71.43619 0 0 1-71.192381 71.68zM191.634286 234.300952a32.182857 32.182857 0 0 0-31.939048 32.182858v203.337142a32.182857 32.182857 0 0 0 31.939048 32.182858h640.731428a32.182857 32.182857 0 0 0 31.939048-32.182858v-203.337142a32.182857 32.182857 0 0 0-31.939048-32.182858z"
+                    fill="#54B6DD" p-id="15545"></path>
+                  <path
+                    d="M274.529524 440.807619m29.257143 0l14.384762 0q29.257143 0 29.257142 29.257143l0 147.748571q0 29.257143-29.257142 29.257143l-14.384762 0q-29.257143 0-29.257143-29.257143l0-147.748571q0-29.257143 29.257143-29.257143Z"
+                    fill="#F9E4E8" p-id="15546"></path>
+                  <path
+                    d="M316.952381 666.575238h-10.24a50.95619 50.95619 0 0 1-50.956191-50.712381v-143.603809a51.2 51.2 0 0 1 50.956191-50.956191H316.952381a51.2 51.2 0 0 1 50.95619 50.956191v143.603809A50.95619 50.95619 0 0 1 316.952381 666.575238z m-10.24-206.019048a11.702857 11.702857 0 0 0-11.702857 11.702858v143.603809a11.702857 11.702857 0 0 0 11.702857 11.459048H316.952381a11.459048 11.459048 0 0 0 11.702857-11.459048v-143.603809a11.459048 11.459048 0 0 0-11.702857-11.702858z"
+                    fill="#FF94AE" p-id="15547"></path>
+                  <path
+                    d="M671.207619 440.807619m29.257143 0l14.384762 0q29.257143 0 29.257143 29.257143l0 147.748571q0 29.257143-29.257143 29.257143l-14.384762 0q-29.257143 0-29.257143-29.257143l0-147.748571q0-29.257143 29.257143-29.257143Z"
+                    fill="#F9E4E8" p-id="15548"></path>
+                  <path
+                    d="M712.899048 666.575238h-10.48381a50.712381 50.712381 0 0 1-50.712381-50.712381v-143.603809a50.95619 50.95619 0 0 1 50.712381-50.956191h10.48381a50.95619 50.95619 0 0 1 50.712381 50.956191v143.603809a50.712381 50.712381 0 0 1-50.712381 50.712381z m-10.48381-206.019048a11.702857 11.702857 0 0 0-11.702857 11.702858v143.603809a11.702857 11.702857 0 0 0 11.702857 11.459048h10.48381a11.702857 11.702857 0 0 0 11.702857-11.459048v-143.603809a11.702857 11.702857 0 0 0-11.702857-11.702858z"
+                    fill="#FF94AE" p-id="15549"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="content clearfix  advance">
+              <div class="left">
+                <span class="title">抢先看</span>
+                <span class="desc">可公开的情报</span>
+              </div>
+              <div class="right iconfont">
+                <svg t="1606701996874" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="14951" width="200" height="200">
+                  <path
+                    d="M736.653061 929.959184H287.346939c-45.97551 0-83.591837-37.616327-83.591837-83.591837V177.632653c0-45.97551 37.616327-83.591837 83.591837-83.591837h449.306122c45.97551 0 83.591837 37.616327 83.591837 83.591837v668.734694c0 45.97551-37.616327 83.591837-83.591837 83.591837z"
+                    fill="#F2CB51" p-id="14952"></path>
+                  <path
+                    d="M694.857143 606.040816H329.142857c-11.493878 0-20.897959-9.404082-20.897959-20.897959s9.404082-20.897959 20.897959-20.897959h365.714286c11.493878 0 20.897959 9.404082 20.897959 20.897959s-9.404082 20.897959-20.897959 20.897959zM694.857143 449.306122H329.142857c-11.493878 0-20.897959-9.404082-20.897959-20.897959s9.404082-20.897959 20.897959-20.897959h365.714286c11.493878 0 20.897959 9.404082 20.897959 20.897959s-9.404082 20.897959-20.897959 20.897959zM701.126531 292.571429h-365.714286c-11.493878 0-20.897959-9.404082-20.897959-20.89796s9.404082-20.897959 20.897959-20.897959h365.714286c11.493878 0 20.897959 9.404082 20.897959 20.897959s-9.404082 20.897959-20.897959 20.89796zM590.367347 762.77551H329.142857c-11.493878 0-20.897959-9.404082-20.897959-20.897959s9.404082-20.897959 20.897959-20.897959h261.22449c11.493878 0 20.897959 9.404082 20.897959 20.897959s-9.404082 20.897959-20.897959 20.897959z"
+                    fill="#AF8015" p-id="14953"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <span class="title">人气排行</span>
+                <span class="desc">因为你的热度</span>
+              </div>
+              <div class="right iconfont">
+                <i>&#xe60b;</i>
+              </div>
+            </div>
+          </section>
+          <section class="vip-banner">
+
+            <ul class="banner clearfix">
+              <li><img src="./images/vip-swiper-4.jpeg" alt=""></li>
+              <li><img src="./images/vip-swiper-1.jpeg" alt=""></li>
+              <li><img src="./images/vip-swiper-2.jpeg" alt=""></li>
+              <li><img src="./images/vip-swiper-3.jpeg" alt=""></li>
+              <li><img src="./images/vip-swiper-4.jpeg" alt=""></li>
+              <li><img src="./images/vip-swiper-1.jpeg" alt=""></li>
+            </ul>
+
+          </section>
+          <section class="store store1">
+            <ul class="clearfix choose">
+              <li class="active">推荐</li>
+              <li>魔力赏</li>
+              <li>美图</li>
+              <li>情报</li>
+            </ul>
+            <ul class="goods">
+              <li>
+                <div class="imgBox"><img src="./images/goods1.jpg" alt=""></div>
+                <div class="goodsInfo">
+                  <span class="title">
+                    广州·BilibiliWorld 2020
+                  </span>
+                  <div class="site">
+                    <span class="time">
+                      2020.12.26 - 12.27
+                    </span>
+                    <span class="city">广州市</span>
+                    <span>琶洲广交会展馆</span>
+                  </div>
+                  <span class="label">独家</span>
+                  <span class="price">
+                    ￥<span>100</span>
+                     <span class="like">9.7万人想去</span>
+                     <span class="addCart">+</span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="imgBox"><img src="./images/goods2.jpg" alt=""></div>
+                <div class="goodsInfo">
+                  <span class="title">
+                    上海·恋与制作人动画 × animate cafe咖啡店
+                </span>
+                  <div class="site">
+                    <span class="time">2020.12.11 - 2021.01.17</span>
+                    <span class="city">上海市</span>
+                    <span>animate cafe上海店</span></div>
+                  <span class="label">独家</span>
+                  <span class="price">
+                    ￥<span>30</span>
+                     <span class="like">9.7万人想去</span>
+                       <span class="addCart">+</span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="imgBox"><img src="./images/goods3.jpg" alt=""></div>
+                <div class="goodsInfo">
+                  <span class="title">
+                    上海·Bilibili Macro Link-Visual Release 2020
+                </span>
+                  <div class="site">
+                    <span class="time">2020.12.19</span>
+                    <span class="city">上海市</span>
+                    <span>国家会展中心</span></div>
+                  <span class="label">独家</span>
+                  <span class="price">
+                    ￥<span>280</span>
+                     <span class="like">9.7万人想去</span>
+                       <span class="addCart">+</span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="imgBox"><img src="./images/goods4.jpg" alt=""></div>
+                <div class="goodsInfo">
+                  <span class="title">
+                    广州·萤火虫动漫游戏嘉年华25th
+                </span>
+                  <div class="site">
+                    <span class="time">2021.01.01 - 01.03</span>
+                    <span class="city">广州市</span>
+                    <span>琶洲·保利世贸博览馆</span>
+                  </div>
+                  <span class="label">独家</span>
+                  <span class="price">
+                    ￥<span>30</span>
+                     <span class="like">9.7万人想去</span>
+                       <span class="addCart">+</span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="imgBox"><img src="./images/goods5.jpg" alt=""></div>
+                <div class="goodsInfo">
+                  <span class="title">
+                    成都·咕噜猫咪咖啡馆
+                </span>
+                  <div class="site">
+                    <span class="time">2019.06.01 - 2021.05.10</span>
+                    <span class="city">成都市</span>
+                    <span>钻石广场</span>
+                  </div>
+                  <span class="label">独家</span>
+                  <span class="price">
+                    ￥<span>30</span>
+                     <span class="like">9.7万人想去</span>
+                       <span class="addCart">+</span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="imgBox"><img src="./images/goods6.jpg" alt=""></div>
+                <div class="goodsInfo">
+                  <span class="title">
+                    北京·萤火虫IDO国际动漫游戏嘉年华2nd
+                </span>
+                  <div class="site">
+                    <span class="time">2021.01.01 - 01.03</span>
+                    <span class="city">北京市</span>
+                    <span>北京亦创国际会展中心</span>
+                  </div>
+                  <span class="label">独家</span>
+                  <span class="price">
+                    ￥<span>30</span>
+                     <span class="like">9.7万人想去</span>
+                       <span class="addCart">+</span>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="foot-tabBar">
+      <a href="./index.htm">
+          <div class="home"><i class="iconfont ">&#xe609;</i>
+          </div></a>
+      <a href="./cinema.html">
+          <div class="hot">
+              <i class="iconfont">&#xe67a;<span>电影</span></i>
+              
+          </div>
+      </a>
+      <a href="./vip.html">
+          <div class="vip">
+              <i class="iconfont">&#xe6ff;<span>会员</span></i>
+              
+          </div>
+      </a>
+      <a href="./dynamic.html">
+          <div class="dynamic">
+              <i class="iconfont">&#xe625; <span>动态</span></i>
+             
+          </div>
+      </a>
+      <a href="./profile.html">
+          <div class="profile">
+              <i class="iconfont">&#xe652;<span>我的</span></i>
+              
+          </div>
+      </a>
+  </div>
+  </div>
+  <script src="./better-scroll/dist/bscroll.min.js"></script>
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/swiper.js"></script>
+  <script src="./js/vip.js"></script>
+  <script>
+
+      // 添加购物车
+      // 获取商品清单的session
+  let shopList = window.sessionStorage.getItem('shopList')? window.sessionStorage.getItem('shopList') : '[]'
+  // JSON字符串转换json对象
+  shopList = JSON.parse(shopList);
+  // 事件委托
+  $('.goods').delegate('span.addCart', 'click', function(ev) {
+    let target = $(ev.target)
+    let img = target.parents('.goodsInfo').siblings('.imgBox').children('img')
+    let imgSrc = img.attr('src')
+    let name = target.parents('.goodsInfo').children('span.title').html()
+    let price = target.parents('.price').children('span:first-child').html()
+    let id = shopList.length + 1
+    // 创建商品对象
+
+    let goodsInfo = {
+      active:'active',
+      id,
+      imgSrc,
+      name,
+      price,
+      count: 1
+    }
+    if (shopList.length > 0) {
+      let key = false
+      // 有就修改数量
+      shopList.forEach((item, index) => {
+        if (item['name'].trim() === goodsInfo['name'].trim()) {
+          item['count'] += 1;
+          key = true
+        }   
+      })
+      // 没有该商品则添加
+      if (!key) {
+        shopList.push(goodsInfo)
+        
+      }
+   
+    } else {
+      shopList.push(goodsInfo)
+    }
+    
+   
+
+   window.sessionStorage.setItem('shopList', JSON.stringify(shopList))
+   $('.mask2').removeClass('hide')
+   $('.shopCount').html(parseInt($('.shopCount').html()) +1)
+   $('.shopCount').removeClass('hide')
+   setTimeout(() => {$('.mask2').addClass('hide')}, 1000)
+  } )
+
+  $('.cart').click(function() {
+    window.location.href = './shopCart.html'
+  })
+
+ 
+  </script>
+</body>
+
+</html>

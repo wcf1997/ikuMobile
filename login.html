@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable=0>
+    <title>登陆</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+            <img src="./images/head-bg.png" alt="">
+        </div>
+        <div class="container">
+            <h1>用户登陆</h1>
+         
+                <div class="form-area">
+                    <div class="user-input">
+                        <span>用户名</span>
+                        <i>用户名</i>
+                        <input type="text" name="userName" class="username">
+                        <div class="userRex hide rex"> 账号不能为空</div>
+                    </div>
+                    <div class="pwd-input">
+                        <span>密码</span>
+                        <i>密码</i>
+                        <input type="password" name="userPass" class="password">
+                        <div class="pwdRex rex hide">密码不能为空</div>
+                    </div>
+                    <div class="btn-area">
+                        <input type="submit" value="登陆" class="login">
+                    </div>
+                    <div class="tip">
+                        <a href="#">忘记密码?</a>
+                         |
+                        <a href="./register.html" class="register">现在注册</a>
+                    </div>
+                   
+                </div>
+           
+            <a href="./profile.html" class="back">返回>>></a>
+        </div>
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script>
+        $('#login-button').click(function (event) {
+            event.preventDefault();
+            $('form').fadeOut(500);
+            $('.wrapper').addClass('form-success');
+        });
+        
+        $('.username').focus(function(){
+            $('.user-input>span').addClass('active')
+            $('.user-input>i').addClass('active')
+            $(this).addClass('select')
+        })
+        $('.username').blur(function(){
+            
+            if(!$(this).val()) {
+                $('.user-input>span').removeClass('active')
+               $('.user-input>i').removeClass('active')
+                $(this).removeClass('select')
+                $('.userRex').removeClass('hide')
+            }else {
+                $('.user-input>span').addClass('active')
+                   $('.user-input>i').addClass('active')
+                   $('.userRex').addClass('hide')
+                    
+            }
+
+            
+            
+        })
+        $('.password').focus(function(){
+            $('.pwd-input>span').addClass('active')
+            $('.pwd-input>i').addClass('active')
+            $(this).addClass('select')
+        })
+        $('.password').blur(function(){
+            
+            if (!$(this).val()) {
+                $('.pwd-input>span').removeClass('active')
+                $('.pwd-input>i').removeClass('active')
+                $(this).removeClass('select')
+                $('.pwdRex').removeClass('hide')
+            }else {
+                $('.pwd-input>span').addClass('active')
+                $('.pwd-input>i').addClass('active')
+                $('.pwdRex').addClass('hide')
+            }
+          
+            
+        })
+        let register = document.querySelector('.register')
+        
+        register.onclick = function() {
+            window.location.href('./register.html')
+        }
+        // 添加验证规则
+        
+        function debance(callback,time) {
+            let timer;
+            return function() {
+                if (timer) return clearTimeout(timer);
+                timer = setTimeout(() => {
+                    callback.call(this)
+                }, time)
+
+            }
+        }
+
+
+        $('.login').click(function() {
+            let userList = window.sessionStorage.getItem('userList')? window.sessionStorage.getItem('userList') : [];
+            userList = JSON.parse(userList)
+            if (userList.length < 1) {
+                alert('请先注册~!')
+            }
+            let username = $('.username').val()
+            let password = $('.password').val()
+            let user = {
+
+            }
+            userList.forEach(function(item, index) {
+               
+                if(item['username'] === username && item['password'] === password) {
+                    alert("登陆成功")
+                    user.username = item['username']
+                    user.nickname = item['nickname']
+
+                window.sessionStorage.setItem('user',JSON.stringify(user))
+                    window.location.href = './profile.html'
+                } else {
+                    alert("登陆失败")
+                }
+            })
+            
+         })
+
+        </script>
+</body>
+</html>

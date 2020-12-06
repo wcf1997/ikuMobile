@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>播放页面</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/playpage.css">
+</head>
+
+<body>
+	<div id="app">
+		<!-- 播放器 -->
+		<div class="player">
+			<header class="header v-header">
+				<div class="h_left">
+					<span class="iconfont back">&#xe604;</span>
+				</div>
+				<div class="h_center">
+					<div class="search-area">
+						第1话-具体内容
+					</div>
+				</div>
+				<div class="h_right">
+
+					<span class="iconfont menu">&#xe606;</span>
+				</div>
+			</header>
+			<video class="video">
+				<source src="./audio/movie1.mp4">
+			</video>
+			<div class="controll">
+				<div class="play-status">
+					<span></span>
+				</div>
+				<div class="progress">
+					<div class="bg-line">
+						<div class="act-line">
+
+						</div>
+						<div class="dot">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+								<path
+									d="M16.118 3.667h.382a3.667 3.667 0 013.667 3.667v7.333a3.667 3.667 0 01-3.667 3.667h-11a3.667 3.667 0 01-3.667-3.667V7.333A3.667 3.667 0 015.5 3.666h.382L4.95 2.053a1.1 1.1 0 011.906-1.1l1.567 2.714h5.156L15.146.953a1.101 1.101 0 011.906 1.1l-.934 1.614z"
+									fill="#333"></path>
+								<path
+									d="M5.561 5.194h10.878a2.2 2.2 0 012.2 2.2v7.211a2.2 2.2 0 01-2.2 2.2H5.561a2.2 2.2 0 01-2.2-2.2V7.394a2.2 2.2 0 012.2-2.2z"
+									fill="#fff"></path>
+								<path
+									d="M6.967 8.556a1.1 1.1 0 011.1 1.1v2.689a1.1 1.1 0 11-2.2 0V9.656a1.1 1.1 0 011.1-1.1zM15.033 8.556a1.1 1.1 0 011.1 1.1v2.689a1.1 1.1 0 11-2.2 0V9.656a1.1 1.1 0 011.1-1.1z"
+									fill="#333"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="time">
+					<span class="current-t">00:00</span>
+					/
+					<span class="total-t">00:00</span>
+				</div>
+				<div class="fullScreem">
+					<span class="iconfont">&#xe607;</span>
+				</div>
+			</div>
+		</div>
+		<!-- 切换 简介 评论 -->
+		<div class="type-nav">
+			<div class="brief-int act">
+				<span>简介</span>
+			</div>
+			<div class="comment">
+				<span>评论 <i>好多条</i>
+				</span>
+			</div>
+
+		</div>
+		<div class="wrapper ">
+			<div class="content">
+				<div class="main clearfix">
+					<!-- 简介 -->
+					<div class="brief-int-box left">
+						<!-- 介绍 -->
+						<div class="introduct">
+							<div class="header-info clearfix">
+								<h2 class="left">钢之炼金术师</h2>
+								<span class="pursue right iconfont">
+									&#xe82a;&nbsp;追番
+								</span>
+							</div>
+							<div class="int-info clearfix">
+								<div class="info-left left">
+									<p>
+										<span>会员抢先</span>
+										<span>连载中,每周六 10:00更新</span>
+									</p>
+									<p>
+										<i>9.8分</i>
+										<span>9666万</span>播放
+										<span>500万</span>追番
+
+									</p>
+								</div>
+								<div class="info-right right iconfont">
+									详情&nbsp;&nbsp;&nbsp;&#xe61c;
+								</div>
+							</div>
+							<div class="ad-vip">
+								大会员+超Q双年卡限时低至4着
+							</div>
+							<div class="ops">
+								<div class="like">
+									<span class="iconfont">&#xe668;</span>
+									<span>50.6万</span>
+								</div>
+								<div class="download">
+									<span class="iconfont">&#xe62c;</span>
+									<span>下载</span>
+								</div>
+								<div class="comment">
+									<span class="iconfont">&#xe638;</span>
+									<span>点评</span>
+								</div>
+								<div class="forward">
+									<span class="iconfont">&#xe6cf;</span>
+									<span>11.9万</span>
+								</div>
+							</div>
+
+
+						</div>
+						<!-- 选集 -->
+						<div class="episode">
+							<div class="epi-title clearfix">
+								<div class="left">选集</div>
+								<div class="right iconfont">更新至第9话&nbsp;&#xe61c;</div>
+							</div>
+							<div class="epi-list ">
+								<div class="epi-wrapper">
+									<div class="epi-content clearfix">
+
+										<ul class="clearfix">
+											<li class="act">
+												<div>第1话</div>
+												<span>第一话标题</span>
+											</li>
+											<li>
+												<div>第2话</div>
+												<span>第二话标题</span>
+											</li>
+											<li>
+												<div>第3话</div>
+												<span>第三话标题</span>
+											</li>
+											<li>
+												<div>第4话</div>
+												<span>第四话标题</span>
+											</li>
+											<li>
+												<div>第5话</div>
+												<span>第五话标题</span>
+											</li>
+											<li>
+												<div>第6话</div>
+												<span>第六话标题</span>
+											</li>
+											<li>
+												<div>第7话</div>
+												<span>第七话标题</span>
+											</li>
+											<li>
+												<div>第8话</div>
+												<span>第八话标题</span>
+											</li>
+											<li>
+												<div>第9话</div>
+												<span>第九话标题</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 推荐 -->
+						<div class="rec-video">
+							<div class="rec">更多推荐</div>
+							<div class="item clearfix">
+								<div class="img left">
+									<img src="./images/rec-vedio-1.jpg" alt="">
+								</div>
+								<div class="right-words right">
+									<div class="right-title clearfix">
+										<h2 class="left">总之就非常可爱</h2>
+										<span class="score right">
+											<span>9.2</span>分
+											<i>2.5万人</i>
+										</span>
+									</div>
+									<span>更新至9话</span>
+									<span class="iconfont"><span>&#xe65b;&nbsp;5000万</span>&#xe82a;&nbsp;280.6万</span>
+								</div>
+							</div>
+							<div class="item clearfix">
+								<div class="img left">
+									<img src="./images/rec-vedio-2.jpg" alt="">
+								</div>
+								<div class="right-words right">
+									<div class="right-title clearfix">
+										<h2 class="left">成神之日</h2>
+										<span class="score right">
+											<span>9.2</span>分
+											<i>2.5万人</i>
+										</span>
+									</div>
+									<span>更新至9话</span>
+									<span class="iconfont"><span>&#xe65b;&nbsp;5000万</span>&#xe82a;&nbsp;280.6万</span>
+								</div>
+							</div>
+							<div class="item clearfix">
+								<div class="img left">
+									<img src="./images/rec-vedio-3.jpg" alt="">
+								</div>
+								<div class="right-words right">
+									<div class="right-title clearfix">
+										<h2 class="left">终物语</h2>
+										<span class="score right">
+											<span>9.2</span>分
+											<i>2.5万人</i>
+										</span>
+									</div>
+									<span>更新至9话</span>
+									<span class="iconfont"><span>&#xe65b;&nbsp;5000万</span>&#xe82a;&nbsp;280.6万</span>
+								</div>
+							</div>
+							<div class="item clearfix">
+								<div class="img left">
+									<img src="./images/rec-vedio-4.jpg" alt="">
+								</div>
+								<div class="right-words right">
+									<div class="right-title clearfix">
+										<h2 class="left">魔女之旅</h2>
+										<span class="score right">
+											<span>9.2</span>分
+											<i>2.5万人</i>
+										</span>
+									</div>
+									<span>更新至9话</span>
+									<span class="iconfont"><span>&#xe65b;&nbsp;5000万</span>&#xe82a;&nbsp;280.6万</span>
+								</div>
+							</div>
+							<div class="item clearfix">
+								<div class="img left">
+									<img src="./images/rec-vedio-5.jpg" alt="">
+								</div>
+								<div class="right-words right">
+									<div class="right-title clearfix">
+										<h2 class="left">在魔王城说晚安</h2>
+										<span class="score right">
+											<span>9.2</span>分
+											<i>2.5万人</i>
+										</span>
+									</div>
+									<span>更新至9话</span>
+									<span class="iconfont"><span>&#xe65b;&nbsp;5000万</span>&#xe82a;&nbsp;280.6万</span>
+								</div>
+							</div>
+							<div class="item clearfix">
+								<div class="img left">
+									<img src="./images/rec-vedio-6.jpg" alt="">
+								</div>
+								<div class="right-words right">
+									<div class="right-title clearfix">
+										<h2 class="left">咒术回战</h2>
+										<span class="score right">
+											<span>9.2</span>分
+											<i>2.5万人</i>
+										</span>
+									</div>
+									<span>更新至9话</span>
+									<span class="iconfont"><span>&#xe65b;&nbsp;5000万</span>&#xe82a;&nbsp;280.6万</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 评论 -->
+					<div class="comment-box left ">
+						<div class="cmt-head clearfix">
+							<span class="left">热门评论</span>
+							<span class="right iconfont">&#xe62d; <i>按热度</i></span>
+						</div>
+						<div class="cmt-item clearfix">
+							<div class="user-avatar left">
+								<img src="./images/avatar02.jpg" alt="">
+							</div>
+							<div class="left user-info">
+								<div class="info-head clearfix">
+									<span class="user-name vip">用户名</span>
+									<span class="add-user iconfont right">&#xe6a7;&nbsp;关注</span>
+								</div>
+								<div class="release-time">12-5</div>
+								<div class="cmt-content">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sapiente?
+								</div>
+								<div class="ops clearfix iconfont">
+									<span class="favor act">&#xe60f;<i>10.3万</i></span>
+									<span class="dislike">&#xe60d;</span>
+									<i class="right menu iconfont">&#xe606;</i>
+									<div class="other-cmt">
+										<div class="other-cmt-cnt">
+											<span class="o-name">评论者名字:</span>
+											<span class="o-cnt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</span>
+										</div>
+										<div class="other-cmt-cnt">
+											<span class="o-name">评论者名字:</span>
+											<span class="o-cnt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="cmt-item clearfix">
+							<div class="user-avatar left">
+								<img src="./images/avatar02.jpg" alt="">
+							</div>
+							<div class="left user-info">
+								<div class="info-head clearfix">
+									<span class="user-name vip">用户名</span>
+									<span class="add-user iconfont right">&#xe6a7;&nbsp;关注</span>
+								</div>
+								<div class="release-time">12-5</div>
+								<div class="cmt-content">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sapiente?
+								</div>
+								<div class="ops clearfix iconfont">
+									<span class="favor act">&#xe60f;<i>10.3万</i></span>
+									<span class="dislike">&#xe60d;</span>
+									<i class="right menu iconfont">&#xe606;</i>
+									<div class="other-cmt">
+										<div class="other-cmt-cnt">
+											<span class="o-name">评论者名字:</span>
+											<span class="o-cnt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</span>
+										</div>
+										<div class="other-cmt-cnt">
+											<span class="o-name">评论者名字:</span>
+											<span class="o-cnt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+			<div class="cmt-footer hide">
+				<input type="text" name="" id="" class="cmt" placeholder="说点什么吧">
+				<button class="release">发布</button>
+			</div>
+		</div>
+		<div class="hint hide">请先登录！</div>
+	</div>
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./better-scroll/dist/bscroll.min.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/playpage.js"></script>
+
+</html>

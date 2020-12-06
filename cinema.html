@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport'
+        content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' />
+    <meta charset="UTF-8">
+    <title>电影院</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="css/cinema.css">
+    <style>
+        #app {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        .h_left {
+            line-height: 11vw;
+            margin-left: 5%;
+        }
+        .h_left i {
+            font-size: 1vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="h_left">
+                宁波 <i>▼</i>
+            </div>
+            <div class="h_center">电影院</div>
+            <div class="h_right">
+
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="content">
+                <nav class="cinema-nav ">
+                    <a class="active">
+                        <p class="f26">区域</p>
+                         <i>▼</i>
+                    </a>
+                    <a >
+                        <p class="f26">品牌</p>
+                      <i>▼</i>
+                    </a>
+                    <a >
+                        <p class="f26">距离</p>
+                      <i>▼</i>
+                    </a>
+                    <a >
+                        <p class="f26">筛选</p>
+                      <i>▼</i>
+                    </a>
+                </nav>
+                <div class="vip-banner">
+
+                    <ul class="banner clearfix">
+                        <li><img src="./images/vip-swiper-4.jpeg" alt=""></li>
+                        <li><img src="./images/vip-swiper-1.jpeg" alt=""></li>
+                        <li><img src="./images/vip-swiper-2.jpeg" alt=""></li>
+                        <li><img src="./images/vip-swiper-3.jpeg" alt=""></li>
+                        <li><img src="./images/vip-swiper-4.jpeg" alt=""></li>
+                        <li><img src="./images/vip-swiper-1.jpeg" alt=""></li>
+                    </ul>
+
+                </div>
+                <div class="list ">
+                    <div class="list-item  ">
+                        <div class="item-header">
+                            <div class="item-header-fire">
+                                <img src="images/icon/fire_icon.png" alt="">
+                                <p class="f26 white ">人气影院</p>
+                            </div>
+                            <a href="#" class="f23 white">查看全部</a>
+                        </div>
+                        <div class="item-main">
+                            <div class="cinema-name ">
+                                <p class="f26 ">嘉年华国际影城(北路店)</p>
+                                <div class="rank">
+                                    <img  src="images/icon/rank_icon.png" alt="">
+                                    <p class="right">人气5000</p>
+                                </div>
+                            </div>
+                            <p class="cinema-address  ">宁波市某某某路4楼</p>
+                            <div class="label-icon clearfix">
+                                <div class="cinema-label left">
+                                    <p class="bg-yellow">零食</p>
+                                    <p class="bg-violet">MAX厅</p>
+                                    <p class="bg-green">中国巨幕</p>
+                                    <p class="bg-blue">停车场</p>
+                                </div>
+                                <p class="right">1.1km</p>
+                            </div>
+                            <div class="label-icon ">
+                                <div class="discount">
+                                    <div>
+                                        <p class="bg-green">卡</p>
+                                        <p>开通会员卡8折购票</p>
+                                    </div>
+                                    <div>
+                                        <p class="bg-violet">团</p>
+                                        <p>组团购票优惠8折起</p>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <img src="images/icon/price_icon.png" alt="">
+                                    <p class="">
+                                        19.9
+                                        <span class="f-20">起</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item  " >
+                        <div class="item-header">
+                            <div class="item-header-fire">
+                                <img src="images/icon/fire_icon.png" alt="">
+                                <p class="f26 white ml-12">人气影院</p>
+                            </div>
+                            <a href="#" class="f23 white">查看全部</a>
+                        </div>
+                        <div class="item-main">
+                            <div class="cinema-name ">
+                                <p class="f26 ">嘉年华国际影城(北路店)</p>
+                                <div class="rank">
+                                    <img  src="images/icon/rank_icon.png" alt="">
+                                    <p class="right">人气5000</p>
+                                </div>
+                            </div>
+                            <p class="cinema-address  ">南宁市某某某路4楼</p>
+                            <div class="label-icon ">
+                                <div class="cinema-label">
+                                    <p class="bg-yellow">零食</p>
+                                    <p class="bg-violet">MAX厅</p>
+                                    <p class="bg-green">中国巨幕</p>
+                                    <p class="bg-blue">停车场</p>
+                                </div>
+                                <p class="right">1.1km</p>
+                            </div>
+                            <div class="label-icon ">
+                                <div class="discount">
+                                    <div>
+                                        <p class="bg-green">卡</p>
+                                        <p>开通会员卡8折购票</p>
+                                    </div>
+                                    <div>
+                                        <p class="bg-violet">团</p>
+                                        <p>组团购票优惠8折起</p>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <img src="images/icon/price_icon.png" alt="">
+                                    <p class="">
+                                        19.9
+                                        <span class="f-20">起</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item  " >
+                        <div class="item-header">
+                            <div class="item-header-fire">
+                                <img src="images/icon/fire_icon.png" alt="">
+                                <p class="f26 white ml-12">人气影院</p>
+                            </div>
+                            <a href="#" class="f23 white">查看全部</a>
+                        </div>
+                        <div class="item-main">
+                            <div class="cinema-name ">
+                                <p class="f26 ">嘉年华国际影城(北路店)</p>
+                                <div class="rank">
+                                    <img  src="images/icon/rank_icon.png" alt="">
+                                    <p class="right">人气5000</p>
+                                </div>
+                            </div>
+                            <p class="cinema-address  ">南宁市某某某路4楼</p>
+                            <div class="label-icon ">
+                                <div class="cinema-label">
+                                    <p class="bg-yellow">零食</p>
+                                    <p class="bg-violet">MAX厅</p>
+                                    <p class="bg-green">中国巨幕</p>
+                                    <p class="bg-blue">停车场</p>
+                                </div>
+                                <p class="right">1.1km</p>
+                            </div>
+                            <div class="label-icon ">
+                                <div class="discount">
+                                    <div>
+                                        <p class="bg-green">卡</p>
+                                        <p>开通会员卡8折购票</p>
+                                    </div>
+                                    <div>
+                                        <p class="bg-violet">团</p>
+                                        <p>组团购票优惠8折起</p>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <img src="images/icon/price_icon.png" alt="">
+                                    <p class="">
+                                        19.9
+                                        <span class="f-20">起</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item  " >
+                        <div class="item-header">
+                            <div class="item-header-fire">
+                                <img src="images/icon/fire_icon.png" alt="">
+                                <p class="f26 white ml-12">人气影院</p>
+                            </div>
+                            <a href="#" class="f23 white">查看全部</a>
+                        </div>
+                        <div class="item-main">
+                            <div class="cinema-name ">
+                                <p class="f26 ">嘉年华国际影城(北路店)</p>
+                                <div class="rank">
+                                    <img  src="images/icon/rank_icon.png" alt="">
+                                    <p class="right">人气5000</p>
+                                </div>
+                            </div>
+                            <p class="cinema-address  ">南宁市某某某路4楼</p>
+                            <div class="label-icon ">
+                                <div class="cinema-label">
+                                    <p class="bg-yellow">零食</p>
+                                    <p class="bg-violet">MAX厅</p>
+                                    <p class="bg-green">中国巨幕</p>
+                                    <p class="bg-blue">停车场</p>
+                                </div>
+                                <p class="right">1.1km</p>
+                            </div>
+                            <div class="label-icon ">
+                                <div class="discount">
+                                    <div>
+                                        <p class="bg-green">卡</p>
+                                        <p>开通会员卡8折购票</p>
+                                    </div>
+                                    <div>
+                                        <p class="bg-violet">团</p>
+                                        <p>组团购票优惠8折起</p>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <img src="images/icon/price_icon.png" alt="">
+                                    <p class="">
+                                        19.9
+                                        <span class="f-20">起</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item  " >
+                        <div class="item-header">
+                            <div class="item-header-fire">
+                                <img src="images/icon/fire_icon.png" alt="">
+                                <p class="f26 white ml-12">人气影院</p>
+                            </div>
+                            <a href="#" class="f23 white">查看全部</a>
+                        </div>
+                        <div class="item-main">
+                            <div class="cinema-name ">
+                                <p class="f26 ">嘉年华国际影城(北路店)</p>
+                                <div class="rank">
+                                    <img  src="images/icon/rank_icon.png" alt="">
+                                    <p class="right">人气5000</p>
+                                </div>
+                            </div>
+                            <p class="cinema-address  ">南宁市某某某路4楼</p>
+                            <div class="label-icon ">
+                                <div class="cinema-label">
+                                    <p class="bg-yellow">零食</p>
+                                    <p class="bg-violet">MAX厅</p>
+                                    <p class="bg-green">中国巨幕</p>
+                                    <p class="bg-blue">停车场</p>
+                                </div>
+                                <p class="right">1.1km</p>
+                            </div>
+                            <div class="label-icon ">
+                                <div class="discount">
+                                    <div>
+                                        <p class="bg-green">卡</p>
+                                        <p>开通会员卡8折购票</p>
+                                    </div>
+                                    <div>
+                                        <p class="bg-violet">团</p>
+                                        <p>组团购票优惠8折起</p>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <img src="images/icon/price_icon.png" alt="">
+                                    <p class="">
+                                        19.9
+                                        <span class="f-20">起</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- 底部导航条 -->
+          <div class="foot-tabBar">
+            <a href="./index.htm">
+                <div class="home"><i class="iconfont ">&#xe609;</i>
+                </div>
+            </a>
+            <a href="./cinema.html">
+                <div class="hot">
+                    <i class="iconfont">&#xe67a;<span>电影</span></i>
+
+                </div>
+            </a>
+            <a href="./vip.html">
+                <div class="vip">
+                    <i class="iconfont">&#xe6ff;<span>会员</span></i>
+
+                </div>
+            </a>
+            <a href="./dynamic.html">
+                <div class="dynamic">
+                    <i class="iconfont">&#xe625; <span>动态</span></i>
+
+                </div>
+            </a>
+            <a href="./profile.html">
+                <div class="profile">
+                    <i class="iconfont">&#xe652;<span>我的</span></i>
+
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./better-scroll/dist/bscroll.min.js"></script>
+
+    <script>
+        $('.avatar2').click(function () {
+            window.history.back()
+        })
+
+        const scroll = new BScroll('.wrapper', {
+            probetype: 3,
+            click: true,
+            pullUpLoad: true
+        })
+
+        let str = `  <div class="list-item  " >
+                        <div class="item-header">
+                            <div class="item-header-fire">
+                                <img src="images/icon/fire_icon.png" alt="">
+                                <p class="f26 white ml-12">人气影院</p>
+                            </div>
+                            <a href="#" class="f23 white">查看全部</a>
+                        </div>
+                        <div class="item-main">
+                            <div class="cinema-name ">
+                                <p class="f26 ">嘉年华国际影城(北路店)</p>
+                                <div class="rank">
+                                    <img  src="images/icon/rank_icon.png" alt="">
+                                    <p class="right">人气5000</p>
+                                </div>
+                            </div>
+                            <p class="cinema-address  ">南宁市某某某路4楼</p>
+                            <div class="label-icon ">
+                                <div class="cinema-label">
+                                    <p class="bg-yellow">零食</p>
+                                    <p class="bg-violet">MAX厅</p>
+                                    <p class="bg-green">中国巨幕</p>
+                                    <p class="bg-blue">停车场</p>
+                                </div>
+                                <p class="right">1.1km</p>
+                            </div>
+                            <div class="label-icon ">
+                                <div class="discount">
+                                    <div>
+                                        <p class="bg-green">卡</p>
+                                        <p>开通会员卡8折购票</p>
+                                    </div>
+                                    <div>
+                                        <p class="bg-violet">团</p>
+                                        <p>组团购票优惠8折起</p>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <img src="images/icon/price_icon.png" alt="">
+                                    <p class="">
+                                        19.9
+                                        <span class="f-20">起</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`
+
+        scroll.on('pullingUp', function () {
+            addEl($('.list'), str, scroll)
+        })
+        backTopFnc(scroll)
+
+       
+    </script>
+</body>
+
+</html>

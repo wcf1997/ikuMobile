@@ -1,0 +1,336 @@
+
+.header {
+  box-shadow: 0 0 1px 1px #efefef;
+}
+
+body {
+  background-color: #fffefe;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+section.goods-item {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 0 1px 1px #efefef;
+
+}
+.wrapper {
+  width: 100vw;
+  height: calc(100vh - 22vw);
+  overflow: hidden;
+}
+
+section.goods-item>div:first-child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section.goods-item>div:last-child {
+  flex: 6;
+}
+
+section.goods-item .choose>span {
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  color: #fff;
+
+
+}
+
+button:focus {
+  outline: none;
+}
+
+section.goods-item.active .choose>span {
+  background-color: #ff8198;
+  border: 1px solid #ff8198;
+}
+
+section.goods-item .goods {
+  display: flex;
+
+}
+
+section.goods-item .goods>div:first-child {
+  flex: 1;
+  position: relative;
+}
+
+section.goods-item .goods>div.img>img {
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0%;
+  margin: auto;
+}
+
+section.goods-item .goods>div:last-child {
+  flex: 3;
+}
+
+.goodsinfo {
+  padding: 1rem 0;
+  box-sizing: border-box;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goodsinfo h2 {
+  font-size: 1rem;
+  color: #212121;
+}
+
+.goodsinfo .price {
+  color: deeppink;
+}
+
+.goodsinfo .options .left button {
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  border: none;
+
+  background-color: #fff;
+  color: #fff;
+}
+
+.goodsinfo .options .left button.add {
+  background-color: deeppink;
+}
+
+.goodsinfo .options .left>span {
+  margin: 0 5px;
+}
+
+.goodsinfo .options .left button.subtract {
+  /* background-color: #00a1d6; */
+  color: #212121;
+  border: 1px solid #ccc;
+}
+
+.goodsinfo .options .right svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 10px;
+}
+
+
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 1;
+}
+
+.mask>.win_box {
+  width: 85%;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 6px;
+  padding: 0 10px;
+  margin-top: 50%;
+
+
+}
+
+.mask>.win_box>.text {
+  line-height: 75px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.mask>.win_box>.btn {
+  padding: 10px 0;
+}
+
+.mask>.win_box>.btn a {
+  width: 40%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  float: left;
+  border-radius: 4px;
+}
+
+.mask>.win_box>.btn>.cancel {
+  margin-right: 10%;
+  border: 1px solid #ccc;
+}
+
+.mask>.win_box>.btn>.submit {
+  background: #fb7299;
+  color: #fff;
+}
+
+
+.bounceInDown {
+  /* 添加动画效果 执行1秒 */
+  -webkit-animation: bounceInDown 1s;
+  animation: bounceInDown 1s;
+}
+
+/* 创建动画 */
+@keyframes bounceInDown {
+
+  /* 0% 即动画初始状态 */
+  0% {
+    /* 设置透明度为0 透明*/
+    opacity: 0;
+    /* 设置元素在Y轴上的偏移 */
+    transform: translateY(-3000px);
+  }
+
+  /* 当动画执行到60% 时*/
+  60% {
+    /* 透明度1 不透明 */
+    opacity: 1;
+    /* 设置元素在Y轴上的偏移 */
+    transform: translateY(30px);
+  }
+
+  75% {
+    /* 设置元素在Y轴上的偏移 */
+    transform: translateY(-15px);
+  }
+
+  90% {
+    /* 设置元素在Y轴上的偏移 */
+    transform: translateY(5px);
+  }
+
+  100% {
+    /* 取消变换 */
+    transform: none;
+  }
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-3000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  75% {
+
+    transform: translateY(-15px);
+  }
+
+  90% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.footBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  justify-content: start;
+  background-color: #fff;
+  box-shadow: 0 -1px 1px 1px #efefef;
+  z-index: 5;
+
+}
+
+.footBar>div {
+  flex: 1;
+  display: flex;
+  padding: 0 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: start;
+}
+
+.footBar>div:last-child {
+ flex: 2;
+ 
+}
+
+
+
+
+
+.footBar> .r >div {
+  flex: 1;
+}
+.footBar>div.r  {
+  justify-content: end;
+}
+
+.footBar>div .left  {
+  text-align: center;
+}
+.footBar>div .left span {
+  font-size: .9rem;
+  color: deeppink;
+
+}
+
+.footBar>div .selectAll {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 1.5rem;
+  color: #fff;
+
+
+}
+.footBar>div .selectAll.active {
+  background-color: #ff5777! important;
+  color: #fff !important;
+  border: none;
+}
+.footBar>div .right button {
+  width: 5rem;
+  height: 2.5rem;
+  border: none;
+  float: right;
+  background-color: rgb(251, 114, 153);
+  color: #fff;
+  border-radius: 3rem;
+  
+}

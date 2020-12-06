@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="h_left">
+                <a href="#">
+                    <img src="./images/arrow-left.png" class="avatar" alt="">
+
+                </a>
+            </div>
+            <div class="h_center">注册</div>
+            <div class="h_right">
+
+            </div>
+        </header>
+        <div class="container">
+
+            <div class="input">
+                <span class=" iconfont">&#xe652;</span>
+                <input type="text" class="user-phone nickname" placeholder="请起个昵称">
+                <div class="error hide">昵称不能为空</div>
+            </div>
+            
+            <div class="input">
+                <span class="phone-logo logo"></span>
+                <input type="text" class="user-phone username" placeholder="请输入账号">
+                <div class="error hide">账号长度需要6~15个</div>
+            </div>
+            <div class="input">
+                <span class="phone-logo logo"></span>
+                <input type="text" class="user-phone" placeholder="请输入验证码">
+                <span class="code">验证码</span>
+                <div class="error hide">请输入验证码</div>
+
+            </div>
+            <div class="input">
+                <span class="phone-logo logo"></span>
+                <input type="password" class="user-phone pwd1" placeholder="请输入密码">
+                <div class="error hide">密码长度需要6~15个</div>
+
+            </div>
+            <div class="input">
+                <span class="phone-logo logo"></span>
+                <input type="password" class="user-phone pwd2" placeholder="确认密码">
+                <div class="error hide">两次密码不一致</div>
+
+            </div>
+
+            <button class="registerBtn">注册</button>
+
+
+        </div>
+
+
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script>
+        let back = document.querySelector('.h_left')
+        back.onclick = function () {
+            window.history.back()
+
+        }
+
+        let inputDiv = document.querySelectorAll('.input')
+        let inputArr = document.querySelectorAll('input')
+        inputArr.forEach((item, index) => {
+            item.onfocus = function () {
+                inputDiv[index].classList.add('act')
+            }
+            item.onblur = function () {
+                inputDiv[index].classList.remove('act')
+            }
+        })
+        let regKey = false
+        $('.input input').each((index, item) => {
+            $(item).on('blur', function () {
+
+                let strLen = $(item).val().length;
+
+                if (index != 2 && index !== 0) {
+                    if (!strLen || strLen < 6 || strLen > 15) {
+                        $('.error').eq(index).removeClass('hide')
+                        regKey = false
+                    } else {
+                        $('.error').eq(index).addClass('hide')
+                        regKey = true
+                    }
+                } else {
+                    if (strLen == '') {
+                        $('.error').eq(index).removeClass('hide')
+                        regKey = false
+                    } else {
+                        $('.error').eq(index).addClass('hide')
+                        regKey = true
+                    }
+                }
+            })
+        })
+
+
+
+        $('.registerBtn').click(function () {
+            let pwd1 = $('.pwd1').val()
+            let pwd2 = $('.pwd2').val()
+            if (regKey && pwd1 === pwd2) {
+                let username = $('.username').val()
+                let password = $('.pwd1').val()
+                let nickname = $('.nickname').val()
+                let data = {
+                    nickname,
+                    username,
+                    password
+                }
+                let userList = window.sessionStorage.getItem('userList') ? window.sessionStorage.getItem(
+                    'userList') : '[]'
+                
+               
+                userList = JSON.parse(userList)
+               
+        
+                let b = userList.filter(function (item, index) {
+                    return item['username'] == username
+                })
+                console.log(b);
+               if (b.length <1) {
+                userList.push(data)
+                window.sessionStorage.setItem('userList', JSON.stringify(userList))
+                alert('注册成功')
+                $('.input input').each(function (index, item) {
+                    $(item).val('')
+
+                })
+                window.location.href = './login.html'
+               } else {
+                   alert('用户名已存在')
+                   $('.input input').each(function (index, item) {
+                    $(item).val('')
+
+                })
+               }
+
+            } else {
+                alert('注册失败')
+            }
+        })
+    </script>
+</body>
+
+</html>
